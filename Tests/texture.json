@@ -1,0 +1,146 @@
+{
+	"images": ["wall_n.ppm", "wall_t.ppm"],
+	"lights" : [
+		{
+			"type" : "point",
+			"position" : {
+				"x" : 0,
+				"y" : -90,
+				"z" : 80
+			},
+			"intensity" : 0.6
+		},
+		{
+			"type" : "ambient",
+			"intensity" : 0.01
+		}
+	],
+	"camera" : {
+		"position" : {
+			"x" : 0,
+			"y" : -90,
+			"z" : 80
+		},
+		"lens_radius" : 1,
+		"polar_angle" : -20,
+		"azimuthal_angle" : 0,
+		"view_angle": 60
+	},
+	"objects" : [
+		{
+			"primitives" : [
+				{
+					"type" : "plane",
+					"position" : [0, 0, 0],
+					"x_cathetus" : 50,
+					"y_cathetus" : 50
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "cone",
+					"tip" : [45, 45, 50],
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"height" : 50,
+					"angle" : 26.5
+				},
+				{
+					"type" : "circle",
+					"position" : [45, 45, 0],
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"radius" : 25,
+					"x_cathetus" : 50,
+					"y_cathetus" : 50
+				},
+				{
+					"type" : "sphere",
+					"center" : [45, 45, 65],
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"radius" : 25
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "cylinder",
+					"position" : [-45, 45, 0],
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"radius" : 25,
+					"height" : 50
+				},
+				{
+					"type" : "circle",
+					"position" : [-45, 45, 50],
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"radius" : 25,
+					"x_cathetus" : 50,
+					"y_cathetus" : 50
+				},
+				{
+					"type" : "circle",
+					"position" : [-45, 45, 0],
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"radius" : 25,
+					"x_cathetus" : 50,
+					"y_cathetus" : 50
+				},
+				{
+					"type" : "torus",
+					"center" : [-35, 45, 75],
+					"rotation" : {"x": 90, "y": 0, "z": 0},
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"color" : "0xff",
+					"rt" : 17.5,
+					"rc" : 7.5
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "paraboloid",
+					"position" : [0, 15, 50],
+					"texture": {"index": 1, "inv_hor": false, "inv_vert": false},
+					"normal_map": {"index": 0, "inv_hor": false, "inv_vert": false},
+					"rotation" : {"x": 180, "y": 0, "z": 0},
+					"color" : "0xff",
+					"height": 50,
+					"k": 2.5
+				}
+			]
+		}
+	],
+	"transformations" : [
+		{
+			"type" : "rotation",
+			"rotation" : {"x": 0, "y": 0, "z": 0},
+			"object_index" : 0
+		},
+		{
+			"type" : "translation",
+			"vector" : [0, 0, 0],
+			"object_index" : 0
+		}
+	]
+}

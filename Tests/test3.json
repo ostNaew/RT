@@ -1,0 +1,90 @@
+{
+	"materials" : [
+		{
+			"albedo" : 0.9,
+			"specular" : 0.1,
+			"specular_exponent" : 50
+		}
+	],
+	"lights" : [
+		{
+			"type" : "point",
+			"position": [10, -50, 700],
+			"intensity" : 1
+		}
+	],
+	"camera" : {
+		"position" : {
+			"x" : 0,
+			"y" : -500,
+			"z" : 0
+		},
+		"lens_radius" : 0.3,
+		"polar_angle" : -15,
+		"azimuthal_angle" : 0,
+		"view_angle": 60
+	},
+	"objects" : [
+		{
+			"primitives" : [
+				{
+					"type" : "sphere",
+					"color": "0x808080",
+					"center": [120, 0, 0],
+					"radius": 45
+				},
+				{
+					"type" : "sphere",
+					"color": "0x808080",
+					"center": [-120, 0, 0],
+					"radius": 45
+				},
+				{
+					"type" : "cylinder",
+					"color" : "0xCC8443",
+					"position" : [120, 0, 0],
+					"rotation" : {"x": 0, "y": 90, "z": 0},
+					"radius" : 40,
+					"height" : 240
+				},
+				{
+					"type" : "torus",
+					"color" : "0x474A51",
+					"material" : 0,
+					"center" : [95, 0, 0],
+					"rotation" : {"x": 0, "y": 90, "z": 0},
+					"rt" : 40,
+					"rc" : 10
+				},
+				{
+					"type" : "torus",
+					"color" : "0x474A51",
+					"material" : 0,
+					"center" : [-95, 0, 0],
+					"rotation" : {"x": 0, "y": 90, "z": 0},
+					"rt" : 40,
+					"rc" : 10
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "plane",
+					"position" : [0, 0, -300],
+					"color" : "0xffffff",
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"x_cathetus" : 500,
+					"y_cathetus" : 500
+				}
+			]
+		}
+	],
+	"transformations" : [
+		{
+			"type" : "rotation",
+			"rotation" : {"x": 0, "y": 0, "z": 0},
+			"object_index" : 0
+		}
+	]
+}

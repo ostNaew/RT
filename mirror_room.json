@@ -1,0 +1,201 @@
+{
+	"images": ["floor_t.ppm"],
+	"materials" : [
+		{
+			"emittance" : 1,
+			"light_intensity" : 1,
+			"albedo": 0
+		},
+		{
+			"albedo" : 0.1,
+			"refraction": 0.9,
+			"refractive_index" : 1.33
+		},
+		{
+			"albedo" : 0.05,
+			"specular" : 0.95,
+			"specular_exponent" : 1000
+		}
+	],
+	"lights" : [
+		{
+			"type" : "ambient",
+			"direction": [-1, 1, -1],
+			"position": [-49, -99, 49.999990],
+			"angle": 20,
+			"intensity" : 0.3
+		},
+		{
+			"type" : "directional",
+			"direction": [-1, 1, -1],
+			"position": [-49, -99, 49.999990],
+			"angle": 20,
+			"intensity" : 0.3
+		},
+		{
+			"type" : "directional",
+			"position": [49, -99, 49.999990],
+			"direction": [1, 1, -1],
+			"angle": 20,
+			"intensity" : 0.3
+		}
+	],
+	"camera" : {
+		"position" : {
+			"x" : 0,
+			"y" : -49,
+			"z" : 0
+		},
+		"lens_radius" : 1,
+		"polar_angle" : 0,
+		"azimuthal_angle" : 0,
+		"view_angle": 60
+	},
+	"objects" : [
+		{
+			"primitives" : [
+				{
+					"type" : "plane",
+					"position" : [0, 100, 0],
+					"color" : "0xffffff",
+					"rotation" : {"x": 90, "y": 0, "z": 0},
+					"texture": {"index": 0, "inv_vert": false, "inv_hor": false},
+					"x_cathetus" : 50,
+					"y_cathetus" : 50,
+					"material": 2
+				},
+				{
+					"type" : "plane",
+					"position" : [0, -100, 0],
+					"color" : "0xffffff",
+					"rotation" : {"x": 90, "y": 0, "z": 0},
+					"texture": {"index": 0, "inv_vert": false, "inv_hor": false},
+					"x_cathetus" : 50,
+					"y_cathetus" : 50,
+					"material": 2
+				},
+				{
+					"type" : "plane",
+					"position" : [-50, 0, 0],
+					"color" : "0Xffffff",
+					"rotation" : {"x": 90, "y": 0, "z": 90},
+					"texture": {"index": 0, "inv_vert": false, "inv_hor": false},
+					"x_cathetus" : 50,
+					"y_cathetus" : 50,
+					"material": 2
+				},
+				{
+					"type" : "plane",
+					"position" : [50, 0, 0],
+					"color" : "0Xffffff",
+					"rotation" : {"x": 90, "y": 0, "z": 90},
+					"x_cathetus" : 50,
+					"texture": {"index": 0, "inv_vert": false, "inv_hor": false},
+					"y_cathetus" : 50,
+					"material": 2
+				},
+				{
+					"type" : "plane",
+					"position" : [0, 0, 50],
+					"color" : "0xffffff",
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"x_cathetus" : 50,
+					"texture": {"index": 0, "inv_vert": false, "inv_hor": false},
+					"y_cathetus" : 50,
+					"material": 2
+				},
+				{
+					"type" : "plane",
+					"position" : [0, 0, -50],
+					"color" : "0xffffff",
+					"texture": {"index": 0, "inv_vert": false, "inv_hor": false},
+					"rotation" : {"x": 0, "y": 0, "z": 0},
+					"x_cathetus" : 50,
+					"y_cathetus" : 50,
+					"material": 1
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "cylinder",
+					"position" : [0, 0, 0],
+					"color" : "0x74ff14",
+					"radius" : 12,
+					"height": 10,
+					"material": 1
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "cone",
+					"tip" : [-25, 20, 0],
+					"color" : "0x14afff",
+					"angle" : 20,
+					"material": 1
+				},
+				{
+					"type" : "cone",
+					"tip" : [-25, 20, 0],
+					"color" : "0x14afff",
+					"direction": [0, 0, 1],
+					"angle" : 20,
+					"material": 2
+				}
+			]
+		},
+		{
+			"primitives" : [
+				{
+					"type" : "sphere",
+					"center" : [0, 0, 0],
+					"color" : "0xff14af",
+					"radius" : 15,
+					"truncation_angle": 45,
+					"truncation_vector": [0, 0, 1],
+					"material": 1
+				}
+			]
+		}
+	],
+	"transformations" : [
+		{
+			"type" : "rotation",
+			"rotation" : {"x": 0, "y": 0, "z": 0},
+			"object_index" : 0
+		},
+		{
+			"type" : "translation",
+			"vector" : [0, 0, 0],
+			"object_index" : 0
+		},
+		{
+			"type" : "rotation",
+			"rotation" : {"x": 0, "y": 15, "z": -10},
+			"object_index" : 1
+		},
+		{
+			"type" : "translation",
+			"vector" : [20, 50, 0],
+			"object_index" : 1
+		},
+		{
+			"type" : "rotation",
+			"rotation" : {"x": 0, "y": -15, "z": 10},
+			"object_index" : 2
+		},
+		{
+			"type" : "translation",
+			"vector" : [4, 50, 0],
+			"object_index" : 2
+		},
+		{
+			"type" : "translation",
+			"vector" : [-5, 30, -35],
+			"object_index" : 3
+		}
+	]
+}

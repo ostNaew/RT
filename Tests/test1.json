@@ -1,0 +1,76 @@
+{
+	"materials" : [
+		{
+			"albedo" : 0,
+			"specular" : 1,
+			"specular_exponent" : 50
+		},
+		{
+			"albedo" : 0,
+			"refraction" : 1,
+			"refractive_index" : 1.33
+		},
+		{
+			"albedo" : 1,
+			"specular" : 0,
+			"specular_exponent" : 100
+		}
+	],
+	"lights" : [
+		{
+			"type" : "point",
+			"position": [0, -50, 350],
+			"intensity" : 1
+		}
+	],
+	"camera" : {
+		"position" : {
+			"x" : 0,
+			"y" : -500,
+			"z" : 150
+		},
+		"lens_radius" : 0.3,
+		"polar_angle" : -15,
+		"azimuthal_angle" : 0,
+		"view_angle": 60
+	},
+	"objects" : [
+		{
+			"primitives" : [
+				{
+					"type" : "sphere",
+					"color": "0xff",
+					"truncation_angle" : 90,
+					"truncation_vector" : [0, 0, 1],
+					"center": [0, 0, 50],
+					"radius": 50
+				},
+				{
+					"type" : "triangle",
+					"position" : [-200, 0, 0],
+					"rotation" : {"x": -75, "y": 0, "z": 0},
+					"color": "0xff0000",
+					"x_cathetus" : 100,
+					"y_cathetus" : 100
+				},
+				{
+					"type" : "circle",
+					"color": "0x00ff00",
+					"position" : [150, 0, 50],
+					"radius" : 50,
+					"rotation" : {"x": -75, "y": 0, "z": 0},
+					"x_cathetus" : 50,
+					"y_cathetus" : 50
+				},
+				{
+					"type": "plane",
+					"color" : "0xffff",
+					"position": [0, 0, 0],
+					"x_cathetus" : 50,
+					"y_cathetus" : 50,
+					"rotation" : {"x": 0, "y": 0, "z": 0}
+				}
+			]
+		}
+	]
+}
